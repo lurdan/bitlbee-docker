@@ -26,6 +26,7 @@ RUN set -x \
 	git \
 	json-glib-dev \
 	libtool
+RUN apk add python3 && ln -sf python3 /usr/bin/python
 RUN cd /root \
 	&& git clone -n https://github.com/bitlbee/bitlbee \
 	&& cd bitlbee \
